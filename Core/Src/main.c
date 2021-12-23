@@ -23,7 +23,6 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "oled.h"
-#include "raine64.h"
 #include <string.h>
 /* USER CODE END Includes */
 
@@ -104,12 +103,6 @@ int main(void)
     img_buffer[j]=0x00;
   }
   
-  size_t line_len = 128;
-  for(int k = 0 ; k<PAGES_PER_SCREEN; k++)
-  {
-    memcpy(img_buffer+k*128,raine+k*line_len,line_len);
-  }
-  write_data_oled(img_buffer,buff_len);
   /* USER CODE END 2 */
 
   /* Infinite loop */

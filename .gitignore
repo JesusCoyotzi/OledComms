@@ -12,6 +12,7 @@ build/
 *.ko
 *.obj
 *.elf
+*.ld
 
 # Linker output
 *.ilk
